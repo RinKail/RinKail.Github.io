@@ -3650,6 +3650,7 @@ input, select, textarea {
 		#nav a {
 			color: #ffffff;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
+			
 		}
 
 			#nav a:hover {
@@ -4498,7 +4499,7 @@ input, select, textarea {
 		border: 0;
 		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 0.9rem;
+		font-size: 1.5rem;
 		font-weight: 900;
 		letter-spacing: 0.075em;
 		padding: 0.375rem 1.25rem;
@@ -4528,6 +4529,7 @@ input, select, textarea {
 			background-color: rgba(255, 255, 255, 0.875);
 			box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
 			color: #212931;
+			
 		}
 
 			#navPanelToggle.alt:hover {
