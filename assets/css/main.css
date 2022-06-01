@@ -62,7 +62,7 @@ mark {
 
 input::-moz-focus-inner {
 	border: 0;
-	padding: 0;
+	padding: ;
 }
 
 input, select, textarea {
@@ -3622,7 +3622,7 @@ input, select, textarea {
 		overflow: hidden;
 		padding: 0 2rem 0 0;
 		position: relative;
-		width: calc(100% - 4rem);
+		width: calc(100% - 15rem);
 		max-width: 72rem;
 		z-index: 2;
 	}
@@ -3759,7 +3759,7 @@ input, select, textarea {
 		background-color: #ffffff;
 		position: relative;
 		margin: 0 auto;
-		width: calc(100% - 4rem);
+		width: calc(100% - 15rem);
 		max-width: 72rem;
 		z-index: 2;
 	}
