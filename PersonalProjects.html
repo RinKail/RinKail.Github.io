@@ -1,4 +1,20 @@
 <!DOCTYPE HTML>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+
+
+
+
+
 
 <!--
 	Massively by HTML5 UP
@@ -15,20 +31,19 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
 
+	
+		<div id="wrapper">
 				<!-- Header -->
 					<header id="header">
 						<a href="index.html" class="logo">Samuel Jackson</a>
 					</header>
-
 				<!-- Nav -->
 				<nav id="nav">
 					<ul class="links">
 						<li><a href="index.html">Home</a></li>
-						<li class="active"><a href="PersonalProjects.html">Personal Projects</a></li>
-						<li><a href="AcademicProjects.html">Academic Projects</a></li>
+						<li><a href="PersonalProjects.html">Personal Projects</a></li>
+						<li class="active"><a href="AcademicProjects.html">Academic Projects</a></li>
 					</ul>
 					<ul class="icons">
 						<li><a href="https://twitter.com/RinKail_" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
@@ -42,21 +57,75 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h1>This is a<br />
-									Generic Page</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									
+									<h1>Personal Projects</h1>
+									<p>The projects listed on this page are all personal projects I've been working on in my free time. </p>
 								</header>
 								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+
 							</section>
+							<div class="w3-main">
+
+  <!-- Header -->
+  <header id="portfolio">
+   
+    <div class="w3-container">
+  
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Sections:</span> 
+      <button class="w3-button w3-light-grey"><i></i>Personal</button>
+      <button class="w3-button w3-light-grey w3-hide-small"><i></i>Academic</button>
+      <button class="w3-button w3-light-grey w3-hide-small"><i></i>Proffesional</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/images/CyberScapeCover.png" alt="Plugin" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-light-grey">
+        <p><b>CyberScape</b></p>
+		<p>Tags: UE4, C++, Blueprints, Room-Generation Tools, Modular Weapons, Event based item systems</p>
+        <p>A Top-Down Shooter Bullet-Hell Roguelike.
+			Cyberscape is my first attempt at creating a game from start to finish and is currently in the final stages of development, with small amounts of content remaining. <br>
+			The main points of interest for this project are both on the Designer side and on the Player Side:<br><br> Room Creation in this project is incredibly fast as 
+			rooms are generating using a C++ powered Blueprint system that will create the rooms primary structure from a handful of vector values supplied by the designer.
+			<br><br> On the other hand, the focus for players is on the item system. (I've heard that before) As the player progresses through the game, they can find modules to customize how their
+			weapon functions, these will completly change the weapon's feel such as changing the weapon's projectile paths, replacing the projectiles themselves and even adding unique mechanics, such as slow fire rate, but every third shot does drastically increased damage.
+			<br><br> Alongside the weapon system is the passive system. This utilises an event system that can, based on gameplay events trigger various mechanics. These can also trigger other specific events inside other items.
+			As the player plays through the game, Due to how specialised the items are in this game, the drops will be customised to their current loadout while still providing branching options in the form of pure random items as additional item when it comes to select the next powerful item.
+		</p>
+		<ul class="actions special">
+			<li><a href="#" class="button large">More Details (Coming Soon)</a></li>
+		</ul>	
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/lights.jpg" alt="GameScreenshot" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-light-grey">
+        <p><b>BattleBots (PlaceholderName)</b></p>
+		<p>Tags: UE5, C++, Blueprints, Modular Characters, Event based item-systems, movement Mechanics</p>
+        <p>A Platformer Third-Person Shooter where the player takes control of a Modular Robot. 
+			<br>Items take the form of phyiscal body parts(Gameplay defining effects) and software upgrades (Small gameplay effects).
+			<br> Movement is a primary focus of the game, allowing players to ride on walls/Rails and Slide for quick speed-boosts to get out of danger.
+			<br>This project is primarly for me to improve my capabiltiies in regards to the implementation of Animations and creating more complex gameplay oriented AI. 
+			Of course, I'm also hoping to produce a fun game!
+		</p>
+	
+		<ul class="actions special">
+			<li><a href="#" class="button large">More Details (Coming Soon)</a></li>
+		</ul>	
+	
+      </div>
+    </div>
+   
 
 					</div>
 
-				<!-- Footer -->
+					
+					
+
 				<!-- Footer -->
 				<footer id="footer">
 					
@@ -76,14 +145,13 @@
 						</section>
 					</section>
 				</footer>
+
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Samuel Jackson</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
-
-		
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
