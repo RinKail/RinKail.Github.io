@@ -23,17 +23,21 @@
 							<span class="image avatar48"><img src="images/Icon.png" alt="" /></span>
 							<h1 id="title"> Samuel Jackson </span></h1>
 							<p>Games Programmer</p>
+							<header>
+								<li><a href="/assets/SamuelJackson_CV.pdf">Resume</a></li>
+							</header>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
 								<li><a href="index.html" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">Introduction</span></a></li>
-								<li><a href="#HIW" id="portfolio-link"><span class="icon solid fa-th">How it works</span></a></li>
-								<li><a href="#CPP" id="portfolio-link"><span class="icon solid fa-th">C++ Powered</span></a></li>
-								<li><a href="#BP" id="portfolio-link"><span class="icon solid fa-th">Blueprint Driven</span></a></li>
-								<li><a href="#Extend" id="portfolio-link"><span class="icon solid fa-th">Extendable</span></a></li>
+								<li><a href="#Overview" id="about-link"><span class="icon solid fa-user">Overview</span></a></li>
+								<li><a href="#Generation System" id="portfolio-link"><span class="icon solid fa-th">Generation system</span></a></li>
+								<li><a href="#Landmarks" id="portfolio-link"><span class="icon solid fa-th">Landmarks</span></a></li>
+								<li><a href="#Style Graph" id="portfolio-link"><span class="icon solid fa-th">Style Graph</span></a></li>
+								
+						
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -62,39 +66,39 @@
 
 				<!-- Intro -->
 					<section id="top" class="one dark cover">
-						<div class="container">
+						<div class="container" >
 
-							<header>
-								<h2 class="alt">Final Year Project: World Seed</h2>
-								<p>UE4 Level-Design Plugin</p>
-								
+							<header style="background-color: rgb(161, 161, 161);box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);  border-radius: 5%;">
+								<h2 class="alt"><strong>Samuel Jackson's</strong> Portfolio</h2>
+								<p>Project: <strong>World Seed</strong>
+								</p>
+								<a href="https://github.com/RinKail/WorldSeed" class="button">Source-Code</a>
 							</header>
 
-							<footer>
-								<a href="#PersonalProjects" class="button scrolly">Samuel Jackson</a>
-							</footer>
-
+						
 						</div>
 					</section>
 
 
-					<section id="about" class="two">
+					<section id="Overview" class="two">
 						<div class="container">
 
 							<header>
 								<h2>Final-Year Project</h2>
-								<h1>Project Information</h1>
+								<h1>How Procedural Generation can improve the level-design workflow</h1>
 							</header>
 
 							<a href="#" class="image featured"><img src="images/Cyber.jpg" alt="" /></a>
 
-							<p> For my Final-Year project at University I tasked myself with creating a procedural generation tool that can be used to quickly build out enviroments
-								for top-down games.
+							<p> World Seed is my Final-Year University project. 
+							</p>  
+							<p>
+								The project set out to find a method where a designer can easily and quickly create/modify enviroments. Specifically this project was scoped to specifially for a top-down enviroment.
+								The key features of the project are the following: <br>
+								-various Landmarks are used to generate play spaces. <br>
+								-Fully exposed Blueprint Graph for creating procedural room / Corridor placements. <br>
+								-Data-Table contains all assets that are used for the project. <br>
 
-								I specifically designed this tool for Top-Down games as it would aleviate some scoping issues only needing to account for one perspective.
-
-								This tool's target audience was for smaller scale studios that may not have the manpower to design large scale maps by hand, this tool is designed to enable
-								them to create more enviroments and faster with less custom assets required for the overall enviroment.
 							</p>
 
 						</div>
@@ -103,12 +107,12 @@
 				<!-- Portfolio -->
 
 
-				<section id="HIW" class="three">
+				<section id="Generation System" class="three">
 					<div class="container">
 
 						<header>
-							<h2>Neural Network</h2>
-							<h3>Flappy Birds</h3>
+							<h2>Generation System</h2>
+							
 						</header>
 						<div id = "content-desktop">
 							<main class='ContentDisplayer'>
@@ -119,9 +123,12 @@
 						  
 								</section>
 
-								<section class='right section' style="background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);padding-top: 5%; padding-bottom: 5%;">
+								<section class='right section' style="background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);padding-top: 5%; padding-bottom: 5%; border-radius: 5%">
 						  
 								<p style="text-align: justify; margin-left: 10%; margin-right: 10%;" > 
+									The main principle behind the generation system is to use the landmarks to inform the system exactly how the designer wants the enviroment to look.
+									Futhermore, as long as the assets are created inside a uniform square box (Size is defined inside the code but can be changed.) an artist can quickly create polished assets for the system.
+									Due to this, a designer can already start blocking out their enviroments and once it's time to add the new assets, all that needs to be done is have them added to the Data-Table.
 								
 								</p>
 							</section>
@@ -129,24 +136,22 @@
 						</div>
 						<div id = "content-mobile">
 							<div style="padding-bottom: 75%; position: relative;"><iframe width="100%" height="100%" src="https://gfycat.com/ifr/handysparklinggrouse?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>Gfycat embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
-							<p style="text-align: justify; background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%;"> This implementation of Flappy Birds implements a Neural-Network that is trained through a Genetic Algorithm. <br><br>
-								This particular Neural-Network consists of 2 Hidden layers, with each layer containing 3 Nodes.
-								For the input, it uses:
-								<br> Distance to Floor
-								<br> Distance to Pipe
-								<br> Distance to Pipe Gap.
+							<p style="text-align: justify; background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> This implementation of Flappy Birds implements a Neural-Network that is trained through a Genetic Algorithm. <br><br>
+								The main principle behind the generation system is to use the landmarks to inform the system exactly how the designer wants the enviroment to look.
+								Futhermore, as long as the assets are created inside a uniform square box (Size is defined inside the code but can be changed.) an artist can quickly create polished assets for the system.
+								Due to this, a designer can already start blocking out their enviroments and once it's time to add the new assets, all that needs to be done is have them added to the Data-Table.
 							</p>
 					</div>
 					
 				</section>
 					
 
-					<section id="CPP" class="five">
+					<section id="Landmarks" class="five">
 						<div class="container">
 
 							<header>
-								<h2>Decision Theory</h2>
-								<h3>Chess</h3>
+								<h2>Landmarks</h2>
+								<h3>Types and Features</h3>
 							</header>
 							<div id = "content-desktop">
 								<main class='ContentDisplayer'>
@@ -156,24 +161,32 @@
 										<div style="padding-bottom: 75%; position: relative; margin-left: 10%; margin-right: 10%; margin-top: 10%; margin-bottom: 10%;"><iframe width="100%" height="100%" src="https://gfycat.com/ifr/fancybruisedenglishpointer?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>Gfycat embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
 							  
 									</section>
-									<section class='right section' style="background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);padding-top: 5%; padding-bottom: 5%;">
+									<section class='right section' style="background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);padding-top: 5%; padding-bottom: 5%; border-radius: 5%">
 							  
-									<p style="text-align: justify; margin-left: 10%; margin-right: 10%;" > 
-										
-										This Chess implementation utilises Alpha-Beta pruning to improve the calculation times per move. <br><br>
-										It calculates the best move based on: <br>
-										<br> <b>Remaining pieces:</b> Each piece time has it's own score.
-										<br><b> Board Positions:</b> Each Piece on the board has it's own positional table, with the King having 2 based on board state.
+									<p style="text-align: justify; margin-left: 10%; margin-right: 10%; border-radius: 5%" > 
+										There are a number of pre-created landmark and when it comes to creating a new landmark, it's as simple as simple as inheriting from the base class and overriding the "ApplyLandmark" Function.
+										<br> the following landmarks are currently implemented:
+										<br> Standard: Simple Box shape.
+										<br> Corridor: Paths from point A to B. You can define the width and add additional anchor points.
+										<br> Circle: A circular Landmark. Can define radius.
+										<br> Void: Tells the generator not to generate the meshes for any affected Cell.
+										<br><br>
+										Each landmark comes with the ability to set whether it adds to the terrain or removes away from it. Furthermore channel controls the order the landmarks are applied.
 									</p>
 								</section>
 							  </main>
 							</div>
 							<div id = "content-mobile">
 								<div style="padding-bottom: 75%; position: relative;"><iframe width="100%" height="100%" src="https://gfycat.com/ifr/fancybruisedenglishpointer?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>Gfycat embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
-								<p style="text-align: justify; background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%;">  This Chess implementation utilises Alpha-Beta pruning to improve the calculation times per move. <br><br>
-									It calculates the best move based on: <br>
-									<br> <b>Remaining pieces:</b>b> Each piece time has it's own score.
-									<br><b> Board Positions:</b> Each Piece on the board has it's own positional table, with the King having 2 based on board state.
+								<p style="text-align: justify; background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> 
+									There are a number of pre-created landmark and when it comes to creating a new landmark, it's as simple as simple as inheriting from the base class and overriding the "ApplyLandmark" Function.
+									<br> the following landmarks are currently implemented: <br>
+									<br> Standard: Simple Box shape.
+									<br> Corridor: Paths from point A to B. You can define the width and add additional anchor points.
+									<br> Circle: A circular Landmark. Can define radius.
+									<br> Void: Tells the generator not to generate the meshes for any affected Cell.
+									<br><br>
+									Each landmark comes with the ability to set whether it adds to the terrain or removes away from it. Furthermore channel controls the order the landmarks are applied.
 								</p>
 						</div>
 
@@ -181,12 +194,12 @@
 						
 					</section>
 
-					<section id="BP" class="two">
+					<section id="Style Graph" class="two">
 						<div class="container">
 
 							<header>
-								<h2>Genetic Algorithm</h2>
-								<h3>Tower Defense</h3>
+								<h2>Style Graph</h2>
+								<h3>Procedural-Generation Controls</h3>
 							</header>
 							<div id = "content-desktop">
 								<main class='ContentDisplayer'>
@@ -196,19 +209,13 @@
 										<div style="padding-bottom: 75%; position: relative; margin-left: 10%; margin-right: 10%; margin-top: 10%; margin-bottom: 10%;"><iframe width="100%" height="100%" src="https://gfycat.com/ifr/scrawnywhichbrownbear?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>Gfycat embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
 							  
 									</section>
-									<section class='right section' style="background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);padding-top: 5%; padding-bottom: 5%;">
+									<section class='right section' style="background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);padding-top: 5%; padding-bottom: 5%; border-radius: 5%">
 							  
-									<p style="text-align: justify; margin-left: 10%; margin-right: 10%;" > 
-										
-										This Tower-Defense implementation uses a Genetic Algorithm to find the best combination of tower's and positions to get a score above 200. <br>
-									The following selection algorithms were implemented: <br><br>
-									Eliteism <br>
-									Roulette Wheel <br>
-									Rank <br>
-									Steady State <br><br>
-									By the end of the project it was found that Eliteism served as the best algorithm for this situation as it was capable of reaching the optimum solution within the shortest amount of generations.
-									
+									<p style="text-align: justify; margin-left: 10%; margin-right: 10%; border-radius: 5%" > 
+										The Style Graph is my solution to providing designers a way to quickly procedurally generate enviroments. <br>
+										There are currently two versions implemented, a base class and a child class designed for Dungeon like enviroments. <br>
 
+										The dungeon class provides plenty of tools used to place rooms and connect them together, furthermore it also has the added functionality to determine when "Rooms" are overlapping, automatically merging them logically inside the algorithm while leaving the Landmarks intact.
 
 									</p>
 								</section>
@@ -216,53 +223,17 @@
 							</div>
 							<div id = "content-mobile">
 								<div style="padding-bottom: 75%; position: relative;"><iframe width="100%" height="100%" src="https://gfycat.com/ifr/scrawnywhichbrownbear?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>Gfycat embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
-								<p style="text-align: justify; background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%;"> This Tower-Defense implementation uses a Genetic Algorithm to find the best combination of tower's and positions to get a score above 200. <br><br>
-									There are a hanful of selection algorithms implemented, but the most used is Eliteism.
+								<p style="text-align: justify; background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> 
+									The Style Graph is my solution to providing designers a way to quickly procedurally generate enviroments. <br>
+										There are currently two versions implemented, a base class and a child class designed for Dungeon like enviroments. <br>
+
+										The dungeon class provides plenty of tools used to place rooms and connect them together, furthermore it also has the added functionality to determine when "Rooms" are overlapping, automatically merging them logically inside the algorithm while leaving the Landmarks intact.
+
 								</p>
 						</div>
 					</section>
 
-					<section id="Extend" class="three">
-						<div class="container">
-
-							<header>
-								<h2>Artifical Life</h2>
-								<h3>Boids</h3>	
-							</header>
-							<div id = "content-desktop">
-								<main class='ContentDisplayer'>
-
-									<section class='left section'>
-							  
-										<div style="padding-bottom: 75%; position: relative; margin-left: 10%; margin-right: 10%; margin-top: 10%; margin-bottom: 10%;"><iframe width="100%" height="100%" src="https://gfycat.com/ifr/giddymasculinefritillarybutterfly?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>Gfycat embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
-							  
-									</section>
-									<section class='right section' style="background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);padding-top: 5%; padding-bottom: 5%;">
-							  
-									<p style="text-align: justify; margin-left: 10%; margin-right: 10%;" > 
-										
-										Artificial life seeked to simulate living fish in the proximity of a Predator. <br><br>
-									To simulate it as such, each fish is powered by basic steering behaviors that cause them to flock together.
-									
-									<br><br> 
-									The Predator is also a fish, and inherits all properties. But with the additional functionality to move towards the average position of fish. <br>
-									Overtime the Predator will lose speed, but gain a burst of it on eating Fish.
-									</p>
-								</section>
-							  </main>
-							</div>
-							<div id = "content-mobile">
-								<div style="padding-bottom: 75%; position: relative;"><iframe width="100%" height="100%" src="https://gfycat.com/ifr/giddymasculinefritillarybutterfly?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>Gfycat embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
-								<p style="text-align: justify; background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%;">  Artificial life seeked to simulate living fish in the proximity of a Predator. <br><br>
-									To simulate it as such, each fish is powered by basic steering behaviors that cause them to flock together.
-									
-									<br><br> 
-									The Predator is also a fish, and inherits all properties. But with the additional functionality to move towards the average position of fish. <br>
-									Overtime the Predator will lose speed, but gain a burst of it on eating Fish.
-								</p>
-						</div>
-							
-					</section>
+					
 
 
 				<!-- About Me -->
