@@ -93,6 +93,7 @@
 							</p>
 							
 							<a href="https://github.com/RinKail/Necrodoggiecon" class="button">Source-Code</a>
+							
 						</div>
 					</section>
 
@@ -115,10 +116,14 @@
 									</section>
 									<section class='right section'>
 										<p style="text-align: justify; color: black ;background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%">
-										The Level system for this project consists of a base class with three child classes: Game, Editor, Menu <br>
-														The editor class contains all of the backend functionality for much of the Editor, this is due to alot of the editor needing to directly modify the data it contains.
-														Furthermore, while the base game class only needs to Read the data, the editor also needs to export it to a file. as such the Editor class works with a data layer of the map that is later baked into the file.
-							  
+											The level system for this project consists of a base class and 3 derivative children: Editor, Game, Menu. <br><br>
+											The base class maintains the core Grid-Data which consists of a Tile-Class that contains the required infomation.
+											The infomation contained within each tile is the Position. Texture, Collision and Navigation-Data.
+		
+											 The editor then contains additional utility that modifies and generates the Grid. <br>
+											 On the other hand the game class only needs to load the data from a file and instantiate the correct classes.
+											<br><br>
+											The Menu class is even more lightweight than the Game class, as it forgoes instantiating the tilemap and instead creates the provided widgets.
 										</p>
 							  
 								</section>
@@ -128,12 +133,15 @@
 							<div id = "content-mobile">
 								<div style="padding-bottom: 75%; position: relative; margin-left: 10%; margin-right: 10%; margin-top: 10%; margin-bottom: 10%;"><iframe width="100%" height="100%" src="https://gfycat.com/ifr/giddymasculinefritillarybutterfly?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>Gfycat embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
 								<p style="text-align: justify; color: black ;background-color: rgba(40, 36, 44, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%" > 
-									The Level system for this project consists of a base class with three child classes: Game, Editor, Menu. <br><br>
-									The editor class contains all of the backend functionality for much of the Editor, this is due to alot of the editor needing to directly modify the data it contains. <br>
-									Furthermore, while the base game class only needs to Read the data, the editor also needs to export it to a file. as such the Editor class works with a data layer of the map that is later baked into the file.
-		  
-								
+									The level system for this project consists of a base class and 3 derivative children: Editor, Game, Menu. <br><br>
+									The base class maintains the core Grid-Data which consists of a Tile-Class that contains the required infomation. <br>
+									The infomation contained within each tile is the Position. Texture, Collision and Navigation-Data.
 
+									 The editor then contains additional utility that modifies and generates the Grid. <br>
+									 On the other hand the game class only needs to load the data from a file and instantiate the correct classes.
+									<br><br>
+									The Menu class is even more lightweight than the Game class, as it forgoes instantiating the tilemap and instead creates the provided widgets.
+	
 								</p>
 							</div>
 						
@@ -162,8 +170,13 @@
 									</section>
 									<section class='right section'>
 							  
-										<p style="text-align: justify; color: black ;background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> Towers and Buildings are the two distinct structure types in this game <br><br>
-											While Towers are your primary defense tool, buildings serve as a supliment; They unlock new structures and power up nearby towers. <br>
+										<p style="text-align: justify; color: black ;background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> 
+										Inside the editor, you can see the exact transform data of each tile and the placement snaps to the grid. <br>
+										All of the UI Elements are built using ImGui<br>
+										You can choose between using the shape tool or singular tile placements, this can control either walkable spaces or wall.<br>
+										You can save levels at anytime, same goes for loading. <br>
+										For edge cases, you can toggle debug mode to display walkable and unwalkable as black/white. <br>
+										There is a seperate window for both Entities and Property inspector.
 										</p>
 			
 							  
@@ -173,8 +186,13 @@
 							</div>
 							<div id = "content-mobile">
 								<div style="padding-bottom: 75%; position: relative;  margin-left: 10%; margin-right: 10%;"><iframe width="100%" height="100%" src="https://gfycat.com/ifr/fancybruisedenglishpointer?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>Gfycat embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
-								<p style="text-align: justify;color: black  ;background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> Towers and Buildings are the two distinct structure types in this game <br><br>
-									While Towers are your primary defense tool, buildings serve as a supliment; They unlock new structures and power up nearby towers. <br>
+								<p style="text-align: justify;color: black  ;background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> 
+									Inside the editor, you can see the exact transform data of each tile and the placement snaps to the grid. <br>
+										All of the UI Elements are built using ImGui<br>
+										You can choose between using the shape tool or singular tile placements, this can control either walkable spaces or wall.<br>
+										You can save levels at anytime, same goes for loading. <br>
+										For edge cases, you can toggle debug mode to display walkable and unwalkable as black/white. <br>
+										There is a seperate window for both Entities and Property inspector.
 								</p>
 	
 							</div>
@@ -198,9 +216,14 @@
 									</section>
 									<section class='right section'>
 							  
-										<p style="text-align: justify; color: black ;background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> In-order to make it easy to add new turrets and levels, There are 3 quick steps required to add a new turret to the game.<br>
-											Create the Actor, Add it to the table, then add it's ID to an existing Structure's Recipe List.
-											<br><br> Levels are set up in a similar manner, but in this case the only steps are Create the level, then add it to the Level Table.
+										<p style="text-align: justify; color: black ;background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> 
+											As previously mentioned, the Editor tools contain a handful of options for the user. <br>
+											Additive tools add unwalkables, while subtractive add walkables. 
+											As you edit the map, it will automatically render the new tilemap using the data you've inputed which saves conisderable time. <br><br>
+											
+											There is an additional tool that allows you to clear the entire canvas. <br>
+											Lastly, when you save the map it bakes out the exact TileIDs, so when the game loads the map, instead of having to regenerate the tilemap it instead goes straight to loading the asset and setting
+											the collision profile.
 										</p>
 			
 							  
@@ -210,9 +233,14 @@
 							</div>
 							<div id = "content-mobile">
 								<div style="padding-bottom: 75%; position: relative;  margin-left: 10%; margin-right: 10%;"><iframe width="100%" height="100%" src="https://gfycat.com/ifr/scrawnywhichbrownbear?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>Gfycat embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
-								<p style="text-align: justify; color: black ;background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> In-order to make it easy to add new turrets and levels, There are 3 quick steps required to add a new turret to the game.<br>
-									Create the Actor, Add it to the table, then add it's ID to an existing Structure's Recipe List.
-									<br><br> Levels are set up in a similar manner, but in this case the only steps are Create the level, then add it to the Level Table.
+								<p style="text-align: justify; color: black ;background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> 
+									As previously mentioned, the Editor tools contain a handful of options for the user. <br>
+									Additive tools add unwalkables, while subtractive add walkables. 
+									As you edit the map, it will automatically render the new tilemap using the data you've inputed which saves conisderable time. <br><br>
+									
+									There is an additional tool that allows you to clear the entire canvas. <br>
+									Lastly, when you save the map it bakes out the exact TileIDs, so when the game loads the map, instead of having to regenerate the tilemap it instead goes straight to loading the asset and setting
+									the collision profile.
 								</p>
 	
 							</div>
@@ -240,9 +268,17 @@
 									</section>
 									<section class='right section'>
 							  
-										<p style="text-align: justify;color: black  ;background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> In-order to make it easy to add new turrets and levels, There are 3 quick steps required to add a new turret to the game.<br>
-											Create the Actor, Add it to the table, then add it's ID to an existing Structure's Recipe List.
-											<br><br> Levels are set up in a similar manner, but in this case the only steps are Create the level, then add it to the Level Table.
+										<p style="text-align: justify;color: black  ;background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> 
+											Items are loaded from the weapon Json file, it automatically builds the list of items and presents it as a drop down on the item's property inspector.<br>
+											Due to the limited characters and time constraints, AI characters were unfortunately hard coded into the editor. 
+											<br> however, when you select one in the level, you can view it's properties and edit them as required. All character attributes are available.<br>
+											Different characters have slightly different Inspectors as well, As the standard enemy type can be assigned a weapon.
+											All Characters can have their Navigation waypoints assigned in the editor as well.<br><br>
+
+											All Items can be moved and deleted.
+											
+
+
 										</p>
 			
 							  
@@ -252,9 +288,14 @@
 							</div>
 							<div id = "content-mobile">
 								<div style="padding-bottom: 75%; position: relative;  margin-left: 10%; margin-right: 10%;"><iframe width="100%" height="100%" src="https://gfycat.com/ifr/scrawnywhichbrownbear?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>Gfycat embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>
-								<p style="text-align: justify;color: black  ;background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> In-order to make it easy to add new turrets and levels, There are 3 quick steps required to add a new turret to the game.<br>
-									Create the Actor, Add it to the table, then add it's ID to an existing Structure's Recipe List.
-									<br><br> Levels are set up in a similar manner, but in this case the only steps are Create the level, then add it to the Level Table.
+								<p style="text-align: justify;color: black  ;background-color: rgba(0, 0, 0, 0.15); box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125); padding-left: 5%; padding-right: 5%; border-radius: 5%"> 
+									Items are loaded from the weapon Json file, it automatically builds the list of items and presents it as a drop down on the item's property inspector.<br>
+											Due to the limited characters and time constraints, AI characters were unfortunately hard coded into the editor. 
+											<br> however, when you select one in the level, you can view it's properties and edit them as required. All character attributes are available.<br>
+											Different characters have slightly different Inspectors as well, As the standard enemy type can be assigned a weapon.
+											All Characters can have their Navigation waypoints assigned in the editor as well.<br><br>
+
+											All Items can be moved and deleted.
 								</p>
 	
 							</div>
