@@ -2997,8 +2997,36 @@ input[type="submit"],
 
 .Headershadow 
 {
-		background-color: rgba(53, 58, 70, 1);	position: relative;	box-shadow: 5px 5px 5px 2px #080808c7;
+		background-color: rgba(53, 58, 70, 1);
+		position: relative;	
+		box-shadow: 5px 5px 5px 2px #080808c7;
+		border-radius: 5%;
 }
+
+
+.SideContentShadow 
+{
+	text-align: justify; 
+	background-color: rgba(255, 255, 255, 0.8); 
+	color: #0a0a0a;
+	
+	padding-left: 5%;
+	 padding-right: 5%; 
+	 border-radius: 5%;
+	 position: relative;	
+	 box-shadow: 5px 5px 5px 2px #080808c7; 
+		
+}
+.VideoContentPadding
+{
+	padding-bottom: 75%; 
+	position: relative; 
+	margin-left: 10%;
+	 margin-right: 10%; 
+	 margin-top: 10%; 
+	 margin-bottom: 10%;
+}
+
 
 
 
